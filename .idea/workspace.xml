@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8399ad63-741b-4109-919c-af4cb05fcd60" name="Changes" comment="Actializacion de repocitorio: inicio de proyecto">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cps/CasosDePruebas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
+    <list default="true" id="8399ad63-741b-4109-919c-af4cb05fcd60" name="Changes" comment="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cps/CasosDePruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cps/CasosDePruebas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +66,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2aeocjUUaMwcXhBTGEHbwyHRfYu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -81,11 +80,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.CasosDePruebas.CP001_inicio_de_sesion_fallido.executor": "Run",
+    "Gradle.CasosDePruebas.CP002_busqueda_wikipedia.executor": "Run",
+    "Gradle.CasosDePruebas.CP003.executor": "Run",
+    "Gradle.CasosDePruebas.CP004_seguimiento_fallido.executor": "Run",
+    "Gradle.CasosDePruebas.CP005_compra.executor": "Run",
     "Gradle.CasosDePruebas.inicioSesionPCFactory.executor": "Run",
     "Gradle.ronald_veas_prueba1Selenium [clean].executor": "Run",
     "Gradle.ronald_veas_prueba1Selenium [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/roana/IdeaProjects/ronald_veas_prueba1Selenium/src/test/resources/drivers"
   }
@@ -95,8 +100,8 @@
       <recent name="C:\Users\roana\IdeaProjects\ronald_veas_prueba1Selenium\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CasosDePruebas.inicioSesionPCFactory">
-    <configuration name="CasosDePruebas.inicioSesionPCFactory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CasosDePruebas.CP004_seguimiento_fallido">
+    <configuration name="CasosDePruebas.CP001_inicio_de_sesion_fallido" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cps.CasosDePruebas.inicioSesionPCFactory&quot;" />
+            <option value="&quot;cps.CasosDePruebas.CP001_inicio_de_sesion_fallido&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -120,55 +125,109 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ronald_veas_prueba1Selenium [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP002_busqueda_wikipedia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cps.CasosDePruebas.CP002_busqueda_wikipedia&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ronald_veas_prueba1Selenium [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP003" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cps.CasosDePruebas.CP003&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CasosDePruebas.CP004_seguimiento_fallido" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cps.CasosDePruebas.CP004_seguimiento_fallido&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CasosDePruebas.CP005_compra" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;cps.CasosDePruebas.CP005_compra&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CasosDePruebas.inicioSesionPCFactory" />
-        <item itemvalue="Gradle.ronald_veas_prueba1Selenium [test]" />
-        <item itemvalue="Gradle.ronald_veas_prueba1Selenium [clean]" />
+        <item itemvalue="Gradle.CasosDePruebas.CP004_seguimiento_fallido" />
+        <item itemvalue="Gradle.CasosDePruebas.CP003" />
+        <item itemvalue="Gradle.CasosDePruebas.CP005_compra" />
+        <item itemvalue="Gradle.CasosDePruebas.CP002_busqueda_wikipedia" />
+        <item itemvalue="Gradle.CasosDePruebas.CP001_inicio_de_sesion_fallido" />
       </list>
     </recent_temporary>
   </component>
@@ -196,12 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704688765267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas">
+      <option name="closed" value="true" />
+      <created>1704695714753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704695714756</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Actializacion de repocitorio: inicio de proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actializacion de repocitorio: inicio de proyecto" />
+    <MESSAGE value="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas" />
   </component>
 </project>
