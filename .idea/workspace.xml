@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8399ad63-741b-4109-919c-af4cb05fcd60" name="Changes" comment="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="8399ad63-741b-4109-919c-af4cb05fcd60" name="Changes" comment="Actializacion de repocitorio: Continuacion de contruccion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cps/CasosDePruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cps/CasosDePruebas.java" afterDir="false" />
     </list>
@@ -82,9 +81,14 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.CasosDePruebas.CP001_inicio_de_sesion_fallido.executor": "Run",
     "Gradle.CasosDePruebas.CP002_busqueda_wikipedia.executor": "Run",
+    "Gradle.CasosDePruebas.CP002_seguimiento_fallido.executor": "Run",
     "Gradle.CasosDePruebas.CP003.executor": "Run",
+    "Gradle.CasosDePruebas.CP003_inicio_de_sesion.executor": "Run",
+    "Gradle.CasosDePruebas.CP004_busqueda_wikipedia.executor": "Run",
+    "Gradle.CasosDePruebas.CP004_inicio_de_sesion.executor": "Run",
     "Gradle.CasosDePruebas.CP004_seguimiento_fallido.executor": "Run",
     "Gradle.CasosDePruebas.CP005_compra.executor": "Run",
+    "Gradle.CasosDePruebas.CP005_compra_web.executor": "Run",
     "Gradle.CasosDePruebas.inicioSesionPCFactory.executor": "Run",
     "Gradle.ronald_veas_prueba1Selenium [clean].executor": "Run",
     "Gradle.ronald_veas_prueba1Selenium [test].executor": "Run",
@@ -100,7 +104,7 @@
       <recent name="C:\Users\roana\IdeaProjects\ronald_veas_prueba1Selenium\src\test\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CasosDePruebas.CP004_seguimiento_fallido">
+  <component name="RunManager" selected="Gradle.CasosDePruebas.CP001_inicio_de_sesion_fallido">
     <configuration name="CasosDePruebas.CP001_inicio_de_sesion_fallido" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CasosDePruebas.CP002_busqueda_wikipedia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP002_seguimiento_fallido" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -138,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cps.CasosDePruebas.CP002_busqueda_wikipedia&quot;" />
+            <option value="&quot;cps.CasosDePruebas.CP002_seguimiento_fallido&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -149,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CasosDePruebas.CP003" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP003_inicio_de_sesion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cps.CasosDePruebas.CP003&quot;" />
+            <option value="&quot;cps.CasosDePruebas.CP003_inicio_de_sesion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,7 +177,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CasosDePruebas.CP004_seguimiento_fallido" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP004_busqueda_wikipedia" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -186,7 +190,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cps.CasosDePruebas.CP004_seguimiento_fallido&quot;" />
+            <option value="&quot;cps.CasosDePruebas.CP004_busqueda_wikipedia&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,7 +201,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CasosDePruebas.CP005_compra" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CasosDePruebas.CP005_compra_web" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,7 +214,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cps.CasosDePruebas.CP005_compra&quot;" />
+            <option value="&quot;cps.CasosDePruebas.CP005_compra_web&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -223,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CasosDePruebas.CP004_seguimiento_fallido" />
-        <item itemvalue="Gradle.CasosDePruebas.CP003" />
-        <item itemvalue="Gradle.CasosDePruebas.CP005_compra" />
-        <item itemvalue="Gradle.CasosDePruebas.CP002_busqueda_wikipedia" />
         <item itemvalue="Gradle.CasosDePruebas.CP001_inicio_de_sesion_fallido" />
+        <item itemvalue="Gradle.CasosDePruebas.CP002_seguimiento_fallido" />
+        <item itemvalue="Gradle.CasosDePruebas.CP005_compra_web" />
+        <item itemvalue="Gradle.CasosDePruebas.CP004_busqueda_wikipedia" />
+        <item itemvalue="Gradle.CasosDePruebas.CP003_inicio_de_sesion" />
       </list>
     </recent_temporary>
   </component>
@@ -263,13 +267,22 @@
       <option name="project" value="LOCAL" />
       <updated>1704695714756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Actializacion de repocitorio: Continuacion de contruccion">
+      <option name="closed" value="true" />
+      <created>1704846746573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704846746573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Actializacion de repocitorio: inicio de proyecto" />
     <MESSAGE value="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actializacion de repocitorio: Se agrega driver, dependncias y clase Casos de Pruebas" />
+    <MESSAGE value="Actializacion de repocitorio: Continuacion de contruccion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actializacion de repocitorio: Continuacion de contruccion" />
   </component>
 </project>

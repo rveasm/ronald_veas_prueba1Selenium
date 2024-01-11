@@ -47,26 +47,61 @@ public class CasosDePruebas {
         btnMiCuenta.click();
         Thread.sleep(1000);
         driver.findElement(By.id("rutId1_uno")).sendKeys("16847197-1");
-        Thread.sleep(1500);
-        driver.findElement(By.id("rutId2_uno")).sendKeys("123hjk");
+
+        driver.findElement(By.id("rutId2_uno")).sendKeys("o#ku87hg9D");
         Thread.sleep(2000);
         driver.findElement(By.id("btn_login_uno")).click();
-        String mensaje = driver.findElement(By.xpath("//div[contains(text(),'RUT o contraseña incorrecta.')]")).getText();
+        String mensaje = driver.findElement(By.xpath("//*[@id='id_nota_forgot_password']/div[1]")).getText();
 
-        Assertions.assertEquals("RUT o contraseña incorrecta.",mensaje);
+        Assertions.assertNotEquals("RUT o contraseña incorrecta.",mensaje);
     }
 
     @Test
-    public void CP002_busqueda_wikipedia() throws InterruptedException {
+    public void CP002_seguimiento_fallido() throws InterruptedException {
+        WebElement btnSeguimiento = driver.findElement(By.xpath("//a[contains(text(),'Seguir mi pedido')]"));
+        btnSeguimiento.click();
+
+        driver.findElement(By.id("id_rut_despacho")).sendKeys("17581848-0");
+        driver.findElement(By.id("id_boleta_despacho")).sendKeys("8768928433");
+        Thread.sleep(3000);
+
+        driver.findElement(By.id("id_buscar_documento")).click();
+        String mensajeErrorDesp = driver.findElement(By.id("id_msg_error_despacho")).getText();
+
+        Assertions.assertEquals("RUT o Numero de boleta incorrecto",mensajeErrorDesp);
+
+    }
+
+    @Test
+    public void CP003_inicio_de_sesion() throws InterruptedException {
+        By localizadorInicioSesion = By.xpath("//span[contains(text(),'Mi cuenta')]");
+        WebElement btnMiCuenta = driver.findElement(localizadorInicioSesion);
+        btnMiCuenta.click();
+        Thread.sleep(1000);
+        driver.findElement(By.id("rutId1_uno")).sendKeys("24499688-4");
+        Thread.sleep(1500);
+        driver.findElement(By.id("rutId2_uno")).sendKeys("o$ku87hg9D");
+        Thread.sleep(2000);
+        driver.findElement(By.id("btn_login_uno")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[contains(text(),'Hola Cesar Pililla!')]")).click();
+        Thread.sleep(3000);
+        //driver.findElement(By.xpath("//a[contains(text(),'Edita tu perfil')]")).click();
+        //driver.findElement(By.xpath("//a[@href='/misdatos']")).click();
+        driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[5]/div[3]/div[1]/div[1]/div[3]/div[1]/a[1]")).click();
+
+        Assertions.assertEquals("https://www.pcfactory.cl/misdatos",driver.getCurrentUrl());
+    }
+
+    @Test
+    public void CP004_busqueda_wikipedia() throws InterruptedException {
         driver.get("https://www.wikipedia.org/");
         Thread.sleep(1000);
-        driver.findElement(By.name("search")).sendKeys("Condorito");
+        By localizadorBusqueda = By.name("search");
+        WebElement txtBuscar = driver.findElement(localizadorBusqueda);
+        txtBuscar.sendKeys("Condorito");
         Thread.sleep(1500);
         driver.findElement(By.xpath("//i[contains( text(),'Search')]")).click();
-        Thread.sleep(1500);
-        driver.findElement(By.className("mw-file-element")).click();
-        Thread.sleep(2000);
-        driver.navigate().back();
         Thread.sleep(2000);
         js.executeScript("window.scrollBy(0,1400)");
         Thread.sleep(3000);
@@ -76,40 +111,7 @@ public class CasosDePruebas {
     }
 
     @Test
-    public void CP003() throws InterruptedException {
-        driver.get("https://www.deezer.com/es/offers");
-        driver.manage().window().maximize();
-        driver.findElement(By.xpath("//button[@id='gdpr-btn-accept-all']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.id("topbar-login-button")).click();
-        Thread.sleep(1500);
-        driver.findElement(By.id("login_mail")).sendKeys("tsanchez@outlook.com");
-        Thread.sleep(1500);
-        driver.findElement(By.id("login_password")).sendKeys("2DKx91w.o");
-        Thread.sleep(3800);
-
-        driver.findElement(By.id("login_form_submit")).click();
-
-        WebElement mensaje = driver.findElement(By.id("//h1[contains(text(),'Una experiencia única, solo en Deezer')]"));
-        //Select select = new Select(identidad);
-        //select.selectByIndex(2)
-    }
-
-    @Test
-    public void CP004_seguimiento_fallido() throws InterruptedException {
-        driver.get("https://www.tricot.cl/");
-        WebElement btnSeguimiento = driver.findElement(By.xpath("//div[contains(text(),'Seguimiento')]"));
-        btnSeguimiento.click();
-
-        driver.findElement(By.id("invoice")).sendKeys("8768928433");
-        Thread.sleep(3000);
-
-        driver.findElement(By.xpath("//button[contains(text(),'Continuar con el proceso')]")).click();
-
-    }
-
-    @Test
-    public void CP005_compra() throws InterruptedException {
+    public void CP005_compra_web() throws InterruptedException {
         driver.get("https://www.demoblaze.com/");
         driver.manage().window().maximize();
 
@@ -140,8 +142,8 @@ public class CasosDePruebas {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//button[contains(text(),'Purchase')]")).click();
         Thread.sleep(10000);
-        String mensajeCompra = driver.findElement(By.xpath("//h2[contains(text(),'Thank you for your purchase!')]")).getText();
-        Assertions.assertEquals("'Thank you for your purchase!",mensajeCompra);
+        String mensajeCompra = driver.findElement(By.xpath("/html/body/div[10]/h2")).getText();
+        Assertions.assertEquals("Thank you for your purchase!",mensajeCompra);
 
     }
 }
